@@ -1,19 +1,30 @@
 class String
-  @colors = { red: 31, green: 32, yellow: 33, blue: 34, pink: 35, light_blue: 944, white: 107, light_grey: 47, black: 30 }
+  @colors = { red: 31, green: 32, yellow: 33, blue: 34, pink: 35, light_blue: 944, white: 97, light_grey: 37, black: 30 }
 
   def self.colors
     @colors.keys
   end
-
+  
+  def self.sample_colors
+    @colors.each do |color, number|
+      puts "This is \e[#{number}m#{color}.\e[0m"
+    end  
+  end
+  
+  self.create_colors
+   #code to generate all color methods goes here
 end
 
+String.create_colors
+
 #prints list of colors
-puts String.colors
+#p String.colors
+#String.sample_colors
 
-
-puts "\e[35mThis is pink text.\e[0m"
-
-
+# 
+# puts "\e[35mThis is pink text.\e[0m"
+# 
+# 
 #   Hash used to define color method names and color values
 #   @colors = {red: 31, green: 32, yellow: 33, blue: 34,
 #     pink: 35, light_blue: 36, white: 97, light_grey: 37, black: 30}
@@ -42,9 +53,9 @@ puts "\e[35mThis is pink text.\e[0m"
 # end
 # 
 # puts "John".red
-
-#String.sample_colors
-
+# 
+# String.sample_colors
+# 
 # class String
 #   @colors = { red: 31, green: 32, yellow: 33, blue: 34, pink: 35, lightblue: 36,
 #     white: 37, black: 30 }
@@ -70,7 +81,7 @@ puts "\e[35mThis is pink text.\e[0m"
 # end
 # 
 # String.create_colors
-
+# 
 # class String
 #   def create_greeting
 #     self.prepend("Hello ")
@@ -82,6 +93,6 @@ puts "\e[35mThis is pink text.\e[0m"
 #     "Hello #{name}"
 #   end
 # end
-
-puts "\e[34mThis is blue text.\e[0m"
+# 
+# puts "\e[34mThis is blue text.\e[0m"
 # puts "\e[35mThis is magenta text\e[0m"
