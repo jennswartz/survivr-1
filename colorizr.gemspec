@@ -7,6 +7,5 @@ Gem::Specification.new do |s|
   s.authors     = ["Jennifer Swartz"]
   s.email       = 'swartzjenn@gmail.com'
   s.files       = ["lib/colorizr.rb"]
-  s.homepage    = 'http://www.google.com'
   s.license     = 'MIT'
 end
