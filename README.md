@@ -52,7 +52,7 @@ to send any feedback about the gem to me.
 
 ## License
 
-Copyright (c) [2016] [Jennifer K. Swartz]
+Copyright (c) 2016 Jennifer K. Swartz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,5 +1,5 @@
 class String
-  @colors = { red: 31, green: 32, yellow: 33, blue: 34, pink: 35, light_blue: 944, white: 97, 
+  @colors = { red: 31, green: 32, yellow: 33, blue: 34, pink: 35, light_blue: 94, white: 97, 
   			light_grey: 37, black: 30 }
 
   def self.colors
@@ -22,6 +22,4 @@ class String
 end
 
 String.create_colors
-#p String.colors
-#String.sample_colors
 

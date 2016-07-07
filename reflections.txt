@@ -1,0 +1,14 @@
+How does your gem take advantage of Ruby's metaprogramming capabilities?
+My gem takes advantage of Ruby's metaprogramming capabilities by using send and define_method
+to create the create_colors method.
+
+
+How long did you spend working on this project?
+I worked on it periodically over the course of several days.
+
+What was the most rewarding challenge you conquered?
+I figured out how to make it work.  It took me a while to figure out how to make create_colors
+method in a succinct manner.
+
+Where do you still have room to grow?
+Everywhere.  I'm still finding many concepts very abstract.
