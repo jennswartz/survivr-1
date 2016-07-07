@@ -7,9 +7,7 @@ class String
   end
   
   def self.sample_colors
-    @colors.each do |color, number|
-      puts "This is \e[#{number}m#{color}.\e[0m"
-    end  
+    colors.each { |color| puts "This is " + "#{color}".send(color) } 
   end
 
   def self.create_colors
@@ -22,4 +20,3 @@ class String
 end
 
 String.create_colors
-
